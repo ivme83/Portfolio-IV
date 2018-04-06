@@ -2,12 +2,22 @@ body {
   font-family: "Century Gothic","Apple Gothic",AppleGothic,"URW Gothic L","Avant Garde",Futura,sans-serif;
 }
 
-.header {
+.page-header {
   margin-bottom: 25px;
+  text-align: right;
+  border-bottom-style: solid;
+  border-bottom-width: 4px;
+  font-size: 4em;
 }
 
+.page-sub-header {
+  margin-top: -25px;
+  text-align: right;
+  vertical-align: top;
+  font-style: italic;
+}
 
-
+/* Fancy first letter of paragraph */
 .styled-letter {
   border-style: solid;
   font-size: 3em;
@@ -17,6 +27,7 @@ body {
   vertical-align: bottom;
 }
 
+/* Sidebar styling */
 .sidebar {
   position: fixed;
   top: 0px;
@@ -43,42 +54,6 @@ body {
   width: 100%;
   text-align: right;
   padding-right: 10px;
-}
-
-.logo {
-  margin-left: auto;
-  margin-right: auto;
-  display: block;
-  height: 120px;
-  width: 120px;
-  line-height: 120px;
-
-  border-radius: 20px; /* or 50% */
-
-  background-color: black;
-  color: lightcyan;
-  text-align: center;
-  font-size: 5em;
-}
-
-.icon {
-  margin-bottom: 20px;
-
-  height: 60px;
-  width: 60px;
-  line-height: 60px;
-
-  border-radius: 10px; /* or 50% */
-
-  background-color: black;
-  color: lightcyan;
-  text-align: center;
-  font-size: 2em;
-  
-}
-
-$gmail-link {
-  display: hide;
 }
 
 .nav-link {
@@ -120,12 +95,39 @@ a:hover {
 #pageSubmenu a:hover{
   background-color: darkcyan;
 }
+/* End of sidebar styling */
 
-h1 {
-  text-align: right;
-  border-bottom-style: solid;
-  border-bottom-width: 4px;
-  font-size: 4em;
+.logo {
+  margin-left: auto;
+  margin-right: auto;
+  display: block;
+  height: 120px;
+  width: 120px;
+  line-height: 120px;
+
+  border-radius: 20px; /* or 50% */
+
+  background-color: black;
+  color: lightcyan;
+  text-align: center;
+  font-size: 5em;
+}
+
+.icon {
+  margin-top: auto;
+  margin-bottom: auto;
+
+  height: 60px;
+  width: 60px;
+  line-height: 60px;
+
+  border-radius: 10px; /* or 50% */
+
+  background-color: black;
+  color: lightcyan;
+  text-align: center;
+  font-size: 2em;
+  
 }
 
 #profile-ph {
@@ -134,3 +136,62 @@ h1 {
   margin-right: 30px;
   margin-bottom: 10px;
 }
+
+/* Contact page */
+.contact-link {
+  margin-top: 18px;
+  margin-bottom: 18px;
+  margin-left: 20px;
+}
+
+.contact-link a {
+  color: black;
+  border-bottom: solid;
+  border-bottom-width: 2px;
+
+  text-align: right;
+  width: 400px;
+  display: block;
+}
+
+.contact-row {
+  height: 80px;
+}
+/* End of Contact Page */
+
+/* Portfolio Page */
+.portfolio-ph {
+  margin-right: 30px;
+  margin-bottom: 10px;
+  border-style: solid;
+  border-width: 2px;
+  border-color: lightcyan;
+}
+
+.portfolio-ph:hover {
+  border-style: solid;
+  border-width: 2px;
+  border-color: darkcyan;
+}
+
+.portfolio-header {
+  text-align: right;
+  border-bottom-style: solid;
+  border-bottom-width: 2px; 
+  margin-bottom: 0px;
+}
+
+.port-sub-heading {
+  text-align: right;
+  vertical-align: top;
+  font-style: italic;
+}
+
+.portfolio-sep {
+  border-bottom: solid;
+  border-bottom-width: 2px;
+  margin-bottom: 10px;
+  border-bottom-color: lightcyan;
+}
+
+/* End of Portfolio Page */
