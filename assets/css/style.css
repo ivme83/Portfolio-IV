@@ -6,6 +6,17 @@ body {
   margin-bottom: 25px;
 }
 
+
+
+.styled-letter {
+  border-style: solid;
+  font-size: 3em;
+  padding-left: 8px;
+  padding-right: 8px;
+  margin-right: 3px;
+  vertical-align: bottom;
+}
+
 .sidebar {
   position: fixed;
   top: 0px;
@@ -42,13 +53,32 @@ body {
   width: 120px;
   line-height: 120px;
 
-  -moz-border-radius: 60px; /* or 50% */
-  border-radius: 60px; /* or 50% */
+  border-radius: 20px; /* or 50% */
 
   background-color: black;
   color: lightcyan;
   text-align: center;
   font-size: 5em;
+}
+
+.icon {
+  margin-bottom: 20px;
+
+  height: 60px;
+  width: 60px;
+  line-height: 60px;
+
+  border-radius: 10px; /* or 50% */
+
+  background-color: black;
+  color: lightcyan;
+  text-align: center;
+  font-size: 2em;
+  
+}
+
+$gmail-link {
+  display: hide;
 }
 
 .nav-link {
