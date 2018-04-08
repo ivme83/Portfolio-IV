@@ -30,13 +30,14 @@ body {
 /* Sidebar styling */
 .sidebar {
   position: fixed;
+  /* height: 100vh; */
   top: 0px;
   bottom: 0;
   left: 0;
   z-index: 1000;
   padding: 20px;
   overflow-x: hidden;
-  overflow-y: auto; /* Scrollable contents if viewport is shorter than content. */
+  overflow-y: auto; /*  Scrollable contents if viewport is shorter than content. */
   border-right: 1px solid #eee;
   background-color: lightcyan;
 }
