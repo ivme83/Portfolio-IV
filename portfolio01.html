@@ -1,6 +1,7 @@
 <!DOCTYPE html>
 <html>
     <head>
+        <meta name="viewport" content="width=device-width">
         <title>Portfolio | 01</title>
 
         <!-- Bootstrap CSS -->
@@ -12,77 +13,85 @@
     <body>
       <div class="container-fluid">
         <div class="row">
-            <nav class="col-sm-2 col-md-2 sidebar">
-                <a class="logo" href="index.html">IV</a>
-
-                <ul class="nav">
-                    <li class="nav-item">
-                        <a class="nav-link" href="index.html">About Me</a>
-                    </li>
-                    <li class="nav-item">
-                        <a class="nav-link" href="contact.html">Contact</a>
-                    </li>
-                    <li class="nav-item">
-                        <a class="nav-link" href="#pageSubmenu" data-toggle="collapse" aria-expanded="false">Portfolio</a>
-                    </li>
-                </ul>
-                <ul class="collapse list-unstyled" id="pageSubmenu">
-                    <li><a class="nav-link" href="portfolio01.html">Page 1</a></li>
-                    <li><a class="nav-link" href="portfolio02.html">Page 2</a></li>
-                    <li><a class="nav-link" href="portfolio03.html">Page 3</a></li>
-                </ul>
-                
-            </nav>
-
-            <main class="col-sm-9 offset-sm-3 col-md-10 offset-md-2 pt-3">
-            <div class="container-fluid">
-                <div class="row">
-                    <div class="col-12">
-                        <h1 class="page-header">Portfolio | 01</h1>
-                    </div>
+            <div class="col-xs-12 col-sm-12 col-md-2 sidebar">
+                <div id="logo">
+                    IV
                 </div>
-                <div class="row">
-                    <div class="col-2">
-                        <a target="_blank" href="https://ivme83.github.io/NYTimes-API/"><img class="img-fluid rounded portfolio-ph" src="assets/imgs/NYTimesAPI.jpg"></a>
-                    </div>
-                    <div class="col-10">
-                        <h2 class="portfolio-header">NY Times API Search</h2>
-                        <h6 class="port-sub-heading">ajax API css jquery js</h6>
-                        <p>Access the NY Times api to search for articles. Allows the user to input a query, select the number of results, and optional filters for years. The results are displayed with their Title, byline, date of publication, and a link to follow to the article.</p>
-                    </div>
-                    <div class="col-12">
-                        <div class="portfolio-sep">
+                <nav class="nav flex-md-column">
+                    <ul class="nav flex-md-column">
+                        <li class="nav-item">
+                            <a class="nav-link active" href="index.html">About Me</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="contact.html">Contact</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="#pageSubmenu" data-toggle="collapse" aria-expanded="false">Portfolio</a>
+                        </li>
+                    </ul>
 
-                        </div>
-                    </div>
-                </div>
-                <div class="row">
-                    <div class="col-2">
-                        <a target="_blank" href="https://ivme83.github.io/RPS-Multiplayer/"><img class="img-fluid rounded portfolio-ph" src="assets/imgs/RPS.jpg"></a>
-                    </div>
-                    <div class="col-10">
-                        <h2 class="portfolio-header">Rock, Paper, Scissors - Online</h2>
-                        <h6 class="port-sub-heading">ajax css firebase jquery js</h6>
-                        <p>An online Rock, Paper, Scissors game. The authenticates each user and limits to only two players. Uses Firebase to communicate moves between the two users.</p>
-                    </div>
-                    <div class="col-12">
-                        <div class="portfolio-sep">
-
-                        </div>
-                    </div>
-                </div>
-                <div class="row">
-                    <div class="col-2">
-                        <a target="_blank" href="https://ivme83.github.io/TriviaGame/"><img class="img-fluid rounded portfolio-ph" src="assets/imgs/trivia.jpg"></a>
-                    </div>
-                    <div class="col-10">
-                        <h2 class="portfolio-header">Night Vale Trivia</h2>
-                        <h6 class="port-sub-heading">css jquery js</h6>
-                        <p>A <cite>Welcome to Night Vale</cite> triva game. The player gets 10 seconds to answer each question. The game keeps track of each correct, incorrect, and unanswered questions.</p>
-                    </div>
-                </div>
+                    <ul class="collapse list-unstyled" id="pageSubmenu">
+                        <li><a class="nav-link" href="portfolio01.html">Page 1</a></li>
+                        <li><a class="nav-link" href="portfolio02.html">Page 2</a></li>
+                        <li><a class="nav-link" href="portfolio03.html">Page 3</a></li>
+                    </ul>
+                </nav>
             </div>
+            <main class="col-xs-12 col-sm-12 col-md-10">
+                <div class="container-fluid">
+                    <div class="row">
+                        <div class="col-12">
+                            <h1 class="page-header">Portfolio</h1>
+                            <h3 class="page-sub-header">Page 01</h3>
+                        </div>
+                    </div>
+                    <div class="row">
+                        <div class="col-xs-12 col-sm-12 col-md-2">
+                            <div class="portfolio-link">
+                                <a target="_blank" href="https://ivme83.github.io/NYTimes-API/"><img class="img-fluid rounded portfolio-ph" src="assets/imgs/NYTimesAPI.jpg"></a>
+                            </div>
+                        </div>
+                        <div class="col-xs-12 col-sm-12 col-md-10">
+                            <h2 class="portfolio-header">NY Times API Search</h2>
+                            <h6 class="port-sub-heading">ajax API css jquery js</h6>
+                            <p>Access the NY Times api to search for articles. Allows the user to input a query, select the number of results, and optional filters for years. The results are displayed with their Title, byline, date of publication, and a link to follow to the article.</p>
+                        </div>
+                        <div class="col-12">
+                            <div class="portfolio-sep">
 
+                            </div>
+                        </div>
+                    </div>
+                    <div class="row">
+                        <div class="col-xs-12 col-sm-12 col-md-2">
+                            <div class="portfolio-link">
+                                <a target="_blank" href="https://ivme83.github.io/RPS-Multiplayer/"><img class="img-fluid rounded portfolio-ph" src="assets/imgs/RPS.jpg"></a>
+                            </div>
+                        </div>
+                        <div class="col-xs-12 col-sm-12 col-md-10">
+                            <h2 class="portfolio-header">Rock, Paper, Scissors - Online</h2>
+                            <h6 class="port-sub-heading">ajax css firebase jquery js</h6>
+                            <p>An online Rock, Paper, Scissors game. The game authenticates each user and limits to only two players. Uses Firebase to communicate moves between the two users.</p>
+                        </div>
+                        <div class="col-12">
+                            <div class="portfolio-sep">
+
+                            </div>
+                        </div>
+                    </div>
+                    <div class="row">
+                        <div class="col-xs-12 col-sm-12 col-md-2">
+                            <div class="porfolio-link">
+                                <a target="_blank" href="https://ivme83.github.io/TriviaGame/"><img class="img-fluid rounded portfolio-ph" src="assets/imgs/trivia.jpg"></a>
+                            </div>
+                        </div>
+                        <div class="col-xs-12 col-sm-12 col-md-10">
+                            <h2 class="portfolio-header">Night Vale Trivia</h2>
+                            <h6 class="port-sub-heading">css jquery js</h6>
+                            <p>A <cite>Welcome to Night Vale</cite> triva game. The player gets 10 seconds to answer each question. The game keeps track of each correct, incorrect, and unanswered questions.</p>
+                        </div>
+                    </div>
+                </div>
             </main>
         </div>
       </div>
@@ -97,5 +106,6 @@
     <script defer src="https://use.fontawesome.com/releases/v5.0.9/js/all.js" integrity="sha384-8iPTk2s/jMVj81dnzb/iFR2sdA7u06vHJyyLlAd4snFpCl/SnyUjRrbdJsw1pGIl" crossorigin="anonymous"></script>
     <!-- My js -->
     <script src="assets/javascript/app.js"></script>
+        
     </body>
 </html>

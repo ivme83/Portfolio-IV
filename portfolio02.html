@@ -1,6 +1,7 @@
 <!DOCTYPE html>
 <html>
     <head>
+        <meta name="viewport" content="width=device-width">
         <title>Portfolio | 02</title>
 
         <!-- Bootstrap CSS -->
@@ -12,77 +13,85 @@
     <body>
       <div class="container-fluid">
         <div class="row">
-            <nav class="col-sm-2 col-md-2 sidebar">
-                <a class="logo" href="index.html">IV</a>
-
-                <ul class="nav">
-                    <li class="nav-item">
-                        <a class="nav-link" href="index.html">About Me</a>
-                    </li>
-                    <li class="nav-item">
-                        <a class="nav-link" href="contact.html">Contact</a>
-                    </li>
-                    <li class="nav-item">
-                        <a class="nav-link" href="#pageSubmenu" data-toggle="collapse" aria-expanded="false">Portfolio</a>
-                    </li>
-                </ul>
-                <ul class="collapse list-unstyled" id="pageSubmenu">
-                    <li><a class="nav-link" href="portfolio01.html">Page 1</a></li>
-                    <li><a class="nav-link" href="portfolio02.html">Page 2</a></li>
-                    <li><a class="nav-link" href="portfolio03.html">Page 3</a></li>
-                </ul>
-                
-            </nav>
-
-            <main class="col-sm-9 offset-sm-3 col-md-10 offset-md-2 pt-3">
-            <div class="container-fluid">
-                <div class="row">
-                    <div class="col-12">
-                        <h1 class="page-header">Portfolio | 02</h1>
-                    </div>
+            <div class="col-xs-12 col-sm-12 col-md-2 sidebar">
+                <div id="logo">
+                    IV
                 </div>
-                <div class="row">
-                    <div class="col-2">
-                        <a target="_blank" href="#"><img class="img-fluid rounded portfolio-ph" src="https://dummyimage.com/300"></a>
-                    </div>
-                    <div class="col-10">
-                        <h2 class="portfolio-header">This is a title of my project</h2>
-                        <h6 class="port-sub-heading">Tags for what this project is showing off</h6>
-                        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Tempore ab reprehenderit assumenda quae repudiandae officiis eaque, incidunt, quas quia facilis culpa sequi error voluptate. Perspiciatis voluptatum illo vitae dolorem? Quod quia quos commodi excepturi porro officiis deserunt! Laboriosam, commodi pariatur!</p>
-                    </div>
-                    <div class="col-12">
-                        <div class="portfolio-sep">
+                <nav class="nav flex-md-column">
+                    <ul class="nav flex-md-column">
+                        <li class="nav-item">
+                            <a class="nav-link active" href="index.html">About Me</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="contact.html">Contact</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="#pageSubmenu" data-toggle="collapse" aria-expanded="false">Portfolio</a>
+                        </li>
+                    </ul>
 
-                        </div>
-                    </div>
-                </div>
-                <div class="row">
-                    <div class="col-2">
-                        <a target:"_blank" href="#"><img class="img-fluid rounded portfolio-ph" src="https://dummyimage.com/300"></a>
-                    </div>
-                    <div class="col-10">
-                        <h2 class="portfolio-header">This is a title of my project</h2>
-                        <h6 class="port-sub-heading">Tags for what this project is showing off</h6>
-                        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Iusto, sapiente nesciunt aliquid nisi corporis vitae nam dicta odio at eius ipsum enim et impedit cumque placeat. Aliquid incidunt aspernatur labore.</p>
-                    </div>
-                    <div class="col-12">
-                        <div class="portfolio-sep">
-
-                        </div>
-                    </div>
-                </div>
-                <div class="row">
-                    <div class="col-2">
-                        <a target:"_blank" href="#"><img class="img-fluid rounded portfolio-ph" src="https://dummyimage.com/300"></a>
-                    </div>
-                    <div class="col-10">
-                        <h2 class="portfolio-header">This is a title of my project</h2>
-                        <h6 class="port-sub-heading">Tags for what this project is showing off</h6>
-                        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Impedit, aliquam? Libero sit aperiam atque distinctio id reiciendis deserunt, placeat ipsum rem optio ducimus quidem repellendus accusantium explicabo ipsam eum blanditiis! Blanditiis necessitatibus quae maiores sed omnis, sequi asperiores dicta vel ut voluptatibus reiciendis, quasi officiis corporis dignissimos accusamus, rerum nesciunt?</p>
-                    </div>
-                </div>
+                    <ul class="collapse list-unstyled" id="pageSubmenu">
+                        <li><a class="nav-link" href="portfolio01.html">Page 1</a></li>
+                        <li><a class="nav-link" href="portfolio02.html">Page 2</a></li>
+                        <li><a class="nav-link" href="portfolio03.html">Page 3</a></li>
+                    </ul>
+                </nav>
             </div>
+            <main class="col-xs-12 col-sm-12 col-md-10">
+                <div class="container-fluid">
+                    <div class="row">
+                        <div class="col-12">
+                            <h1 class="page-header">Portfolio</h1>
+                            <h3 class="page-sub-header">Page 02</h3>
+                        </div>
+                    </div>
+                    <div class="row">
+                        <div class="col-xs-12 col-sm-12 col-md-2">
+                            <div class="portfolio-link">
+                                <a target="_blank" href="#"><img class="img-fluid rounded portfolio-ph" src="https://dummyimage.com/300"></a>
+                            </div>
+                        </div>
+                        <div class="col-xs-12 col-sm-12 col-md-10">
+                            <h2 class="portfolio-header">This is a title of my project</h2>
+                            <h6 class="port-sub-heading">Tags for what this project is showing off</h6>
+                            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Natus quaerat iste perspiciatis voluptates, laboriosam corporis vel eveniet dolorem magni nesciunt iusto ducimus labore veniam nobis culpa commodi, mollitia alias asperiores nulla quia aperiam? Pariatur quia voluptas voluptates aspernatur saepe iusto.</p>
+                        </div>
+                        <div class="col-12">
+                            <div class="portfolio-sep">
 
+                            </div>
+                        </div>
+                    </div>
+                    <div class="row">
+                        <div class="col-xs-12 col-sm-12 col-md-2">
+                            <div class="portfolio-link">
+                                <a target="_blank" href="#"><img class="img-fluid rounded portfolio-ph" src="https://dummyimage.com/300"></a>
+                            </div>
+                        </div>
+                        <div class="col-xs-12 col-sm-12 col-md-10">
+                            <h2 class="portfolio-header">This is a title of my project</h2>
+                            <h6 class="port-sub-heading">Tags for what this project is showing off</h6>
+                            <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Assumenda molestias repellendus odit tempore dolor corporis enim omnis, delectus distinctio cum natus, aut nemo perspiciatis quia modi, dignissimos magnam et cumque?</p>
+                        </div>
+                        <div class="col-12">
+                            <div class="portfolio-sep">
+
+                            </div>
+                        </div>
+                    </div>
+                    <div class="row">
+                        <div class="col-xs-12 col-sm-12 col-md-2">
+                            <div class="porfolio-link">
+                                <a target="_blank" href="#"><img class="img-fluid rounded portfolio-ph" src="https://dummyimage.com/300"></a>
+                            </div>
+                        </div>
+                        <div class="col-xs-12 col-sm-12 col-md-10">
+                            <h2 class="portfolio-header">This is a title of my project</h2>
+                            <h6 class="port-sub-heading">Tags for what this project is showing off</h6>
+                            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Dignissimos exercitationem quae temporibus molestiae eligendi! Necessitatibus molestiae consequuntur a cum maiores eos rem quos fugit suscipit doloribus iure magni quidem dolorem dolore quasi eius esse exercitationem odio animi, dicta eum ea. Dolorum, delectus neque. Necessitatibus iure, velit distinctio numquam ducimus asperiores?</p>
+                        </div>
+                    </div>
+                </div>
             </main>
         </div>
       </div>
@@ -97,5 +106,6 @@
     <script defer src="https://use.fontawesome.com/releases/v5.0.9/js/all.js" integrity="sha384-8iPTk2s/jMVj81dnzb/iFR2sdA7u06vHJyyLlAd4snFpCl/SnyUjRrbdJsw1pGIl" crossorigin="anonymous"></script>
     <!-- My js -->
     <script src="assets/javascript/app.js"></script>
+        
     </body>
 </html>

@@ -1,197 +1,241 @@
 body {
-  font-family: "Century Gothic","Apple Gothic",AppleGothic,"URW Gothic L","Avant Garde",Futura,sans-serif;
-}
-
-.page-header {
-  margin-bottom: 25px;
-  text-align: right;
-  border-bottom-style: solid;
-  border-bottom-width: 4px;
-  font-size: 4em;
-}
-
-.page-sub-header {
-  margin-top: -25px;
-  text-align: right;
-  vertical-align: top;
-  font-style: italic;
-}
-
-/* Fancy first letter of paragraph */
-.styled-letter {
-  border-style: solid;
-  font-size: 3em;
-  padding-left: 8px;
-  padding-right: 8px;
-  margin-right: 3px;
-  vertical-align: bottom;
-}
-
-/* Sidebar styling */
-.sidebar {
-  position: fixed;
-  top: 0px;
-  bottom: 0;
-  left: 0;
-  z-index: 1000;
-  padding: 20px;
-  overflow-x: hidden;
-  overflow-y: auto; /* Scrollable contents if viewport is shorter than content. */
-  border-right: 1px solid #eee;
-  background-color: lightcyan;
-}
-
-.sidebar {
-  padding-left: 0;
-  padding-right: 0;
-}
-
-.sidebar .nav {
-  margin-bottom: 20px;
-}
-
-.sidebar .nav-item {
-  width: 100%;
-  text-align: right;
-  padding-right: 10px;
-}
-
-.nav-link {
-  font-size: 1.25em;
-}
-
-a:hover {
-  color: teal;
-  text-decoration: none;
-}
-
-.nav {
-  margin-top: 50px;
-}
-
-.nav-item {
-  margin-top: 10px;
-  margin-bottom: 10px;
-}
-
-.nav-item:hover {
-  background-color: darkcyan;
-}
-
-.nav-item a:hover {
-  color: lightcyan;
-}
-
-#pageSubmenu {
-  background-color:teal;
-  margin-top: -30px;
-}
-
-#pageSubmenu a{
-  color: lightcyan;
-  text-align: right;
-}
-
-#pageSubmenu a:hover{
-  background-color: darkcyan;
-}
-/* End of sidebar styling */
-
-.logo {
-  margin-left: auto;
-  margin-right: auto;
-  display: block;
-  height: 120px;
-  width: 120px;
-  line-height: 120px;
-
-  border-radius: 20px; /* or 50% */
-
-  background-color: black;
-  color: lightcyan;
-  text-align: center;
-  font-size: 5em;
-}
-
-.icon {
-  margin-top: auto;
-  margin-bottom: auto;
-
-  height: 60px;
-  width: 60px;
-  line-height: 60px;
-
-  border-radius: 10px; /* or 50% */
-
-  background-color: black;
-  color: lightcyan;
-  text-align: center;
-  font-size: 2em;
-  
-}
-
-#profile-ph {
-  height: 300px;
-  float: left;
-  margin-right: 30px;
-  margin-bottom: 10px;
+font-family: "Century Gothic","Apple Gothic",AppleGothic,"URW Gothic L","Avant Garde",Futura,sans-serif;
 }
 
 /* Contact page */
+.icon {
+    margin-top: auto;
+    margin-bottom: auto;
+
+    height: 60px;
+    width: 60px;
+    line-height: 60px;
+
+    border-radius: 10px; /* or 50% */
+
+    background-color: black;
+    color: lightcyan;
+    text-align: center;
+    font-size: 2em;
+}
+
 .contact-link {
-  margin-top: 18px;
-  margin-bottom: 18px;
-  margin-left: 20px;
+    margin-top: 18px;
+    margin-bottom: 18px;
+    margin-left: 20px;
 }
 
 .contact-link a {
-  color: black;
-  border-bottom: solid;
-  border-bottom-width: 2px;
+    color: black;
+    border-bottom: solid;
+    border-bottom-width: 2px;
 
-  text-align: right;
-  width: 400px;
-  display: block;
+    text-align: right;
+    width: 400px;
+    display: block;
 }
 
 .contact-row {
-  height: 80px;
+    height: 80px;
 }
 /* End of Contact Page */
 
+/* Fancy first letter of paragraph */
+.styled-letter {
+    border-style: solid;
+    font-size: 3em;
+    padding-left: 8px;
+    padding-right: 8px;
+    margin-right: 3px;
+    vertical-align: bottom;
+}
+
+.page-header {
+    margin-bottom: 25px;
+    text-align: right;
+    border-bottom-style: solid;
+    border-bottom-width: 4px;
+    font-size: 4em;
+}
+  
+.page-sub-header {
+    margin-top: -25px;
+    text-align: right;
+    vertical-align: top;
+    font-style: italic;
+}
+
+.sidebar {
+    background-color: lightcyan;
+
+    padding-left: 0;
+    padding-right: 0;
+
+}
+
+a:hover {
+    color: teal;
+    text-decoration: none;
+}
+.nav-item {
+    margin-top: 10px;
+    margin-bottom: 10px;
+}
+
+.nav-item:hover {
+    background-color: darkcyan;
+}
+
+.nav-item a:hover {
+    color: lightcyan;
+}
+
+#pageSubmenu {
+    background-color:teal;
+    margin-top: -10px;
+}
+
+#pageSubmenu a{
+    color: lightcyan;
+    text-align: right;
+}
+
+#pageSubmenu a:hover{
+    background-color: darkcyan;
+}
+
+#logo {
+    display: block;
+
+    background-color: black;
+    color: lightcyan;
+    text-align: center;
+}
+
 /* Portfolio Page */
 .portfolio-ph {
-  margin-right: 30px;
-  margin-bottom: 10px;
-  border-style: solid;
-  border-width: 2px;
-  border-color: lightcyan;
+    margin-right: 30px;
+    margin-bottom: 10px;
+    border-style: solid;
+    border-width: 2px;
+    border-color: lightcyan;
 }
 
 .portfolio-ph:hover {
-  border-style: solid;
-  border-width: 2px;
-  border-color: darkcyan;
+    border-style: solid;
+    border-width: 2px;
+    border-color: darkcyan;
 }
 
 .portfolio-header {
-  text-align: right;
-  border-bottom-style: solid;
-  border-bottom-width: 2px; 
-  margin-bottom: 0px;
+    text-align: right;
+    border-bottom-style: solid;
+    border-bottom-width: 2px; 
+    margin-bottom: 0px;
 }
 
 .port-sub-heading {
-  text-align: right;
-  vertical-align: top;
-  font-style: italic;
+    text-align: right;
+    vertical-align: top;
+    font-style: italic;
 }
 
 .portfolio-sep {
-  border-bottom: solid;
-  border-bottom-width: 2px;
-  margin-bottom: 10px;
-  border-bottom-color: lightcyan;
+    border-bottom: solid;
+    border-bottom-width: 2px;
+    margin-bottom: 10px;
+    border-bottom-color: lightcyan;
 }
 
 /* End of Portfolio Page */
+
+@media (max-width: 767.98px) {
+    .portfolio-link {
+        text-align: center;
+    }
+    .portfolio-ph {
+        height: 200px;
+        margin-bottom: 5px;
+    }
+
+    .contact-link a {
+        width: 220px;
+
+    }
+
+    .page-header {
+        margin-bottom: 15px;
+        border-bottom-width: 2px;
+        font-size: 2em;
+    }
+    .page-sub-header {
+        font-size: 1em;
+        margin-top: -10px;
+    }
+
+    #pageSubmenu {
+        width:100%;
+    }
+
+    #logo {
+        height: 60px;   
+        width: 60px;
+        line-height: 60px;
+        margin-top: 20px;
+        margin-left: auto;
+        margin-right: auto;
+    
+        border-radius: 10px;
+        
+        font-size: 2em;
+    }
+
+    #profile-ph {
+        height: 100px;
+        float: left;
+        margin-right: 20px;
+    }
+}
+
+@media (min-width: 768px) {
+    #profile-ph {
+        height: 300px;
+        float: left;
+        margin-right: 30px;
+        margin-bottom: 10px;
+    }
+
+    .sidebar {
+        /* background-color: lightcyan; */
+        height: 100vh;
+    }
+
+    .sidebar .nav-item {
+        width: 100%;
+        text-align: right;
+        padding-right: 10px;
+    }
+
+    .nav {
+        margin-top: 20px;
+    }
+
+    .nav-link {
+        font-size: 1.25em;
+    }
+    
+
+    #logo {
+        margin-left: auto;
+        margin-right: auto;
+        margin-top: 20px;
+
+        height: 120px;
+        width: 120px;
+        line-height: 120px;
+
+        border-radius: 20px;
+
+        font-size: 5em;
+    }
+}
