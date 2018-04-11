@@ -1,6 +1,146 @@
 body {
-font-family: "Century Gothic","Apple Gothic",AppleGothic,"URW Gothic L","Avant Garde",Futura,sans-serif;
+    font-family: "Century Gothic","Apple Gothic",AppleGothic,"URW Gothic L","Avant Garde",Futura,sans-serif;
 }
+
+.sidebar {
+    grid-area: sd;
+    background-color: lightcyan;
+}
+
+.main {
+    grid-area: mn;
+    background-color: white;
+}
+
+/* Start of Navigation */
+#logo {
+    display: block;
+
+    background-color: black;
+    color: lightcyan;
+    text-align: center;
+}
+
+.centered {
+    display: flex;
+    justify-content: center;
+}
+
+a:hover {
+    color: teal;
+    text-decoration: none;
+}
+.nav-item {
+    margin-top: 10px;
+    margin-bottom: 10px;
+}
+
+.nav-item:hover {
+    background-color: darkcyan;
+}
+
+.nav-item a:hover {
+    color: lightcyan;
+}
+
+#pageSubmenu {
+    background-color:teal;
+    margin-top: -10px;
+}
+
+#pageSubmenu a{
+    color: lightcyan;
+    text-align: right;
+}
+
+#pageSubmenu a:hover{
+    background-color: darkcyan;
+}
+/* End of Navigation */
+
+.main-hd {
+    grid-area: hd;
+    text-align: right;
+    padding-left: 20px;
+    padding-right: 20px;
+
+}
+
+.styled-letter {
+    border-style: solid;
+    font-size: 3em;
+    padding-left: 8px;
+    padding-right: 8px;
+    margin-right: 3px;
+    vertical-align: bottom;
+}
+
+.page-header {
+    margin-bottom: 25px;
+    /* text-align: right; */
+    border-bottom-style: solid;
+    border-bottom-width: 4px;
+    font-size: 4em;
+}
+  
+.page-sub-header {
+    margin-top: -25px;
+    /* text-align: right; */
+    vertical-align: top;
+    font-style: italic;
+}
+
+.main-ct {
+    grid-area: ct;
+    padding-left: 20px;
+    padding-right: 20px;
+}
+
+/* Contact Page Grids */
+.con-grid {
+    display: grid;
+    grid-template: 1fr 1fr 1fr / 1fr;
+    grid-template-areas:    "i1"
+                            "i2"
+                            "i3";
+    grid-gap: 0px;
+    width: 100%;
+    height: 100%;
+}
+
+.con-item {
+    display: grid;
+    grid-template: 1fr / 80px 1fr;
+    grid-template-areas: "ic li";
+    grid-gap: 10px;
+    width: 100%;
+    height: 100%;
+}
+
+.con-icon1 {
+    grid-area: ic;
+}
+
+.con-link1 {
+    grid-area: li;
+}
+
+.con-icon2 {
+    grid-area: ic;
+}
+
+.con-link2 {
+    grid-area: li;
+}
+
+.con-icon3 {
+    grid-area: ic;
+}
+
+.con-link3 {
+    grid-area: li;
+}
+/* End Contact Page Grids */
 
 /* Contact page */
 .icon {
@@ -40,82 +180,21 @@ font-family: "Century Gothic","Apple Gothic",AppleGothic,"URW Gothic L","Avant G
 }
 /* End of Contact Page */
 
-/* Fancy first letter of paragraph */
-.styled-letter {
-    border-style: solid;
-    font-size: 3em;
-    padding-left: 8px;
-    padding-right: 8px;
-    margin-right: 3px;
-    vertical-align: bottom;
-}
-
-.page-header {
-    margin-bottom: 25px;
-    text-align: right;
-    border-bottom-style: solid;
-    border-bottom-width: 4px;
-    font-size: 4em;
-}
-  
-.page-sub-header {
-    margin-top: -25px;
-    text-align: right;
-    vertical-align: top;
-    font-style: italic;
-}
-
-.sidebar {
-    background-color: lightcyan;
-
-    padding-left: 0;
-    padding-right: 0;
-
-}
-
-a:hover {
-    color: teal;
-    text-decoration: none;
-}
-.nav-item {
-    margin-top: 10px;
-    margin-bottom: 10px;
-}
-
-.nav-item:hover {
-    background-color: darkcyan;
-}
-
-.nav-item a:hover {
-    color: lightcyan;
-}
-
-#pageSubmenu {
-    background-color:teal;
-    margin-top: -10px;
-}
-
-#pageSubmenu a{
-    color: lightcyan;
-    text-align: right;
-}
-
-#pageSubmenu a:hover{
-    background-color: darkcyan;
-}
-
-#logo {
-    display: block;
-
-    background-color: black;
-    color: lightcyan;
-    text-align: center;
-}
-
 /* Portfolio Page */
+.portfolio-grid {
+    display: grid;
+    grid-template: 1fr 1fr 1fr / 1fr;
+    grid-gap: 0px;
+    width: 100%;
+    height: 100%;
+}
+
+.portfolio-photo {
+    grid-area: ph;
+    /* background-color: blue; */
+}
+
 .portfolio-ph {
-    margin-right: 30px;
-    margin-bottom: 10px;
     border-style: solid;
     border-width: 2px;
     border-color: lightcyan;
@@ -125,6 +204,12 @@ a:hover {
     border-style: solid;
     border-width: 2px;
     border-color: darkcyan;
+}
+
+.portfolio-head {
+    grid-area: h;
+    padding-left: 20px;
+    /* background-color: red; */
 }
 
 .portfolio-header {
@@ -140,74 +225,55 @@ a:hover {
     font-style: italic;
 }
 
+.portfolio-desc {
+    grid-area: c;
+    padding-left: 20px;
+    /* background-color: green; */
+}
+
 .portfolio-sep {
+    grid-area: br;
     border-bottom: solid;
     border-bottom-width: 2px;
     margin-bottom: 10px;
     border-bottom-color: lightcyan;
+    /* background-color: yellow; */
 }
-
 /* End of Portfolio Page */
 
-@media (max-width: 767.98px) {
-    .portfolio-link {
-        text-align: center;
-    }
-    .portfolio-ph {
-        height: 200px;
-        margin-bottom: 5px;
-    }
-
-    .contact-link a {
-        width: 220px;
-
-    }
-
-    .page-header {
-        margin-bottom: 15px;
-        border-bottom-width: 2px;
-        font-size: 2em;
-    }
-    .page-sub-header {
-        font-size: 1em;
-        margin-top: -10px;
-    }
-
-    #pageSubmenu {
-        width:100%;
-    }
-
-    #logo {
-        height: 60px;   
-        width: 60px;
-        line-height: 60px;
-        margin-top: 20px;
-        margin-left: auto;
-        margin-right: auto;
-    
-        border-radius: 10px;
-        
-        font-size: 2em;
-    }
-
-    #profile-ph {
-        height: 100px;
-        float: left;
-        margin-right: 20px;
-    }
-}
-
 @media (min-width: 768px) {
-    #profile-ph {
-        height: 300px;
-        float: left;
-        margin-right: 30px;
-        margin-bottom: 10px;
+    .page-grid {
+        display: grid;
+        grid-template: 1fr / 200px 1fr;
+        grid-template-areas:    "sd mn";
+        grid-gap: 0px;
+        width: 100vw;
+        height: 100vh;
     }
 
-    .sidebar {
-        /* background-color: lightcyan; */
-        height: 100vh;
+    .main-grid {
+        display: grid;
+        grid-template: 1fr 5fr / 100%;
+        grid-template-areas:    "hd"
+                                "ct";
+        grid-gap: 0px;
+        height: 100%;
+        width: 100%;
+    }
+    
+    /* Start of Navigation */
+    #logo {
+        /* margin-left: auto;
+        margin-right: auto; */
+        margin-top: 20px;
+
+        height: 120px;
+        width: 120px;
+        line-height: 120px;
+
+        border-radius: 20px;
+
+        font-size: 5em;
     }
 
     .sidebar .nav-item {
@@ -223,19 +289,119 @@ a:hover {
     .nav-link {
         font-size: 1.25em;
     }
-    
+    /* End of Navigation */
+
+    #profile-ph {
+        height: 300px;
+        float: left;
+        margin-right: 30px;
+        margin-bottom: 10px;
+    }
+
+    .portfolio-item-grid {
+        display: grid;
+        grid-template: auto 1fr 20px / 200px auto;
+        grid-template-areas:    "ph h"
+                                "ph c"
+                                "br br";
+        grid-gap: 0px;
+        width: 100%;
+        height: 100%;
+    }
+}
+
+
+
+@media (max-width: 767.98px) {
+    .page-header {
+        border-bottom-width: 2px;
+        font-size: 2em;
+    }
+    .page-sub-header {
+        font-size: 1em;
+    }
+
+    .page-grid {
+        display: grid;
+        grid-template: auto 1fr / 1fr;
+        grid-template-areas:    "sd"
+                                "mn";
+        grid-gap: 0px;
+        width: 100vw;
+        height: 100vh;
+    }
+
+    .main-grid {
+        display: grid;
+        grid-template: auto 1fr / 100%;
+        grid-template-areas:    "hd"
+                                "ct";
+        grid-gap: 0px;
+        height: 100%;
+        width: 100%;
+    }
+
+    .main-ct {
+        padding-left: 20px;
+        padding-right: 20px;
+    }
 
     #logo {
+        height: 60px;   
+        width: 60px;
+        line-height: 60px;
+        margin-top: 20px;
         margin-left: auto;
         margin-right: auto;
-        margin-top: 20px;
-
-        height: 120px;
-        width: 120px;
-        line-height: 120px;
-
-        border-radius: 20px;
-
-        font-size: 5em;
+    
+        border-radius: 10px;
+        
+        font-size: 2em;
     }
+
+    #pageSubmenu {
+        width:100%;
+    }
+
+    #profile-ph {
+        height: 100px;
+        float: left;
+        margin-right: 20px;
+    }
+
+    .contact-link a {
+        width: 100%;
+    }
+
+    .portfolio-link {
+        text-align: center;
+    }
+    .portfolio-ph {
+        height: 200px;
+        margin-bottom: 5px;
+    }
+
+    .portfolio-item-grid {
+        display: grid;
+        grid-template: auto auto auto auto auto / auto;
+        grid-template-areas:    "ph"
+                                "h"
+                                "c"
+                                "br";
+        grid-gap: 0px;
+        width: 100%;
+        height: 100%;
+    }
+
+    .portfolio-head {
+        padding-left: 10px;
+    }
+
+    .portfolio-desc {
+        padding-left: 10px;
+    }
+}
+
+#myTab {
+    margin: 0px;
 }
