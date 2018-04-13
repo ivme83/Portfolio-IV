@@ -1,7 +1,7 @@
 <!DOCTYPE html>
 <html>
     <head>
-        <meta name="viewport" content="width=device-width">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
         <title>Contact Me</title>
 
         <!-- Bootstrap CSS -->
@@ -11,89 +11,88 @@
     </head>
 
     <body>
-      <div class="container-fluid">
-        <div class="row">
-            <div class="col-xs-12 col-sm-12 col-md-2 sidebar">
-                <div id="logo">
-                    IV
-                </div>
-                <nav class="nav flex-md-column">
-                    <ul class="nav flex-md-column">
-                        <li class="nav-item">
-                            <a class="nav-link active" href="index.html">About Me</a>
-                        </li>
-                        <li class="nav-item">
-                            <a class="nav-link" href="contact.html">Contact</a>
-                        </li>
-                        <li class="nav-item">
-                            <a class="nav-link" href="#pageSubmenu" data-toggle="collapse" aria-expanded="false">Portfolio</a>
-                        </li>
-                    </ul>
 
-                    <ul class="collapse list-unstyled" id="pageSubmenu">
-                        <li><a class="nav-link" href="portfolio01.html">Page 1</a></li>
-                        <li><a class="nav-link" href="portfolio02.html">Page 2</a></li>
-                        <li><a class="nav-link" href="portfolio03.html">Page 3</a></li>
-                    </ul>
-                </nav>
-            </div>
-            <main class="col-xs-12 col-sm-12 col-md-10">
-                <div class="container-fluid">
-                    <div class="row">
-                        <div class="col-12">
-                            <h1 class="page-header">Contact Me</h1>
-                        </div>
+        <div class="page-grid">
+            <div class="sidebar">
+                <div class="centered">
+                    <div id="logo">
+                        IV
                     </div>
-                    
-                    <div class="row">
-                        <div class="col-12">
-                            <div class="row contact-row">
-                                <div class="col-1">
+                </div>
+
+                    <nav class="nav flex-md-column">
+                        <ul class="nav flex-md-column">
+                            <li class="nav-item">
+                                <a class="nav-link active" href="index.html">About Me</a>
+                            </li>
+                            <li class="nav-item">
+                                <a class="nav-link" href="contact.html">Contact</a>
+                            </li>
+                            <li class="nav-item">
+                                <a class="nav-link" href="#pageSubmenu" data-toggle="collapse" aria-expanded="false">Portfolio</a>
+                            </li>
+                        </ul>
+
+                        <ul class="collapse list-unstyled" id="pageSubmenu">
+                            <li><a class="nav-link" href="portfolio01.html">Page 1</a></li>
+                            <li><a class="nav-link" href="portfolio02.html">Page 2</a></li>
+                            <li><a class="nav-link" href="portfolio03.html">Page 3</a></li>
+                        </ul>
+                    </nav>
+            </div>
+            <div class="main">
+                <div class="main-grid">
+                    <div class="main-hd">
+                        <h1 class="page-header">Contact</h1>
+                    </div>
+                    <div class="main-ct">
+                        <div class="con-grid">
+                            <div class="con-item">
+                                <div class="con-icon1">
                                     <div class="icon" id="gmail-btn">
                                         <i class="fab fa-google"></i>
                                     </div>
                                 </div>
-                                <div class="col-3 contact-link">
+                                <div class="con-link1 contact-link">
                                     <a href="mailto:rolandwillisiv@gmail.com" id="gmail-link">rolandwillisiv@gmail.com</a>
                                 </div>
                             </div>
-                            <div class="row contact-row">
-                                <div class="col-1">
+                            <div class="con-item">
+                                <div class="con-icon2">
                                     <div class="icon" id="linkedin-btn">
                                         <i class="fab fa-linkedin"></i>
                                     </div>
                                 </div>
-                                <div class="col-3 contact-link">
+                                <div class="con-link2 contact-link">
                                     <a target="_blank" href="https://www.linkedin.com/in/roland-willis-216a6a66/" id="linkedin-link">www.linkedin.com</a>
                                 </div>
                             </div>
-                            <div class="row contact-row">
-                                <div class="col-1">
+                            <div class="con-item">
+                                <div class="con-icon3">
                                     <div class="icon" id="github-btn">
                                         <i class="fab fa-github"></i>
                                     </div>
                                 </div>
-                                <div class="col-3 contact-link">
+                                <div class="con-link3 contact-link">
                                     <a target="_blank" href="https://github.com/ivme83/" id="github-link">www.github.com</a>
                                 </div>
                             </div>
                         </div>
                     </div>
                 </div>
-            </main>
+            </div>
         </div>
-      </div>
 
 
-    <!-- jquery js -->
-    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
-    <!-- Bootstrap js -->
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js" integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q" crossorigin="anonymous"></script>
-    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js" integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl" crossorigin="anonymous"></script>
-    <!-- Font Awesome -->
-    <script defer src="https://use.fontawesome.com/releases/v5.0.9/js/all.js" integrity="sha384-8iPTk2s/jMVj81dnzb/iFR2sdA7u06vHJyyLlAd4snFpCl/SnyUjRrbdJsw1pGIl" crossorigin="anonymous"></script>
-    <!-- My js -->
-    <script src="assets/javascript/app.js"></script>
+        <!-- jquery js -->
+        <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+        <!-- Bootstrap js -->
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js" integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q" crossorigin="anonymous"></script>
+        <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js" integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl" crossorigin="anonymous"></script>
+        <!-- Font Awesome -->
+        <script defer src="https://use.fontawesome.com/releases/v5.0.9/js/all.js" integrity="sha384-8iPTk2s/jMVj81dnzb/iFR2sdA7u06vHJyyLlAd4snFpCl/SnyUjRrbdJsw1pGIl" crossorigin="anonymous"></script>
+        <!-- My js -->
+        <script src="assets/js/app.js"></script>
         
     </body>
 </html>
