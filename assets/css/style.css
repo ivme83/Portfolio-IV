@@ -300,7 +300,7 @@ a:hover {
 
     .portfolio-item-grid {
         display: grid;
-        grid-template: auto 1fr 20px / 200px auto;
+        grid-template: 67px 1fr 20px / 200px auto;
         grid-template-areas:    "ph h"
                                 "ph c"
                                 "br br";
@@ -400,8 +400,4 @@ a:hover {
     .portfolio-desc {
         padding-left: 10px;
     }
-}
-
-#myTab {
-    margin: 0px;
 }
