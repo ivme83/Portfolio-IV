@@ -1,0 +1,103 @@
+html,
+body {
+  margin: 0;
+  padding: 0;
+  font-family: 'Courier New', Courier, monospace;
+}
+
+* {
+  box-sizing: border-box;
+}
+
+.slider {
+  height: auto;
+  margin: 0;
+}
+
+.slick-slide {
+  margin: 0;
+  padding: 0;
+}
+
+.slick-slide img {
+  width: 100%;
+}
+
+.close,
+.next,
+.prev {
+  display: flex;
+
+  cursor: pointer;
+  
+  align-items: center;
+  justify-content: center;
+  
+  background: black;
+  color: white;
+    
+  margin: 0;
+  padding: 0;
+  
+  position: absolute;
+
+  height: 60px;
+  width: 60px;
+
+  transition: background .2s ease, transform .2s ease;
+}
+
+.prev:hover,
+.next:hover,
+.close:hover {
+  background: red;
+}
+
+.close {
+  bottom: 0px;
+  right: 0px;
+}
+
+.prev {
+  bottom: 60px;
+  right: 0px;
+}
+
+.next {
+  bottom: 120px;
+  right: 0px;
+}
+
+.slick-slide {
+  transition: all ease-in-out .3s;
+  opacity: .2;
+}
+
+.slick-active {
+  opacity: .5;
+}
+
+.slick-current {
+  opacity: 1;
+}
+
+.main-grid {
+  display: grid;
+  grid-template: 800px / 35% 65%;
+  grid-template-areas:    "inf car";
+  grid-gap: 0px;
+  height: 800px;
+  width: 100%;
+  padding: 0;
+  margin: 0;
+}
+
+.main-info {
+  grid-area: inf;
+  background-color: #f2f3f5;
+  position: relative;
+}
+
+.main-carousel {
+  grid-area: car;
+}
